@@ -1,0 +1,12 @@
+F:\Users\fabio\source\repos\DesafioUmbler\DesafioUmbler\Shared\bin\Debug\net5.0\DesafioUmbler.Shared.deps.json
+F:\Users\fabio\source\repos\DesafioUmbler\DesafioUmbler\Shared\bin\Debug\net5.0\DesafioUmbler.Shared.dll
+F:\Users\fabio\source\repos\DesafioUmbler\DesafioUmbler\Shared\bin\Debug\net5.0\ref\DesafioUmbler.Shared.dll
+F:\Users\fabio\source\repos\DesafioUmbler\DesafioUmbler\Shared\bin\Debug\net5.0\DesafioUmbler.Shared.pdb
+F:\Users\fabio\source\repos\DesafioUmbler\DesafioUmbler\Shared\obj\Debug\net5.0\DesafioUmbler.Shared.GeneratedMSBuildEditorConfig.editorconfig
+F:\Users\fabio\source\repos\DesafioUmbler\DesafioUmbler\Shared\obj\Debug\net5.0\DesafioUmbler.Shared.AssemblyInfoInputs.cache
+F:\Users\fabio\source\repos\DesafioUmbler\DesafioUmbler\Shared\obj\Debug\net5.0\DesafioUmbler.Shared.AssemblyInfo.cs
+F:\Users\fabio\source\repos\DesafioUmbler\DesafioUmbler\Shared\obj\Debug\net5.0\DesafioUmbler.Shared.csproj.CoreCompileInputs.cache
+F:\Users\fabio\source\repos\DesafioUmbler\DesafioUmbler\Shared\obj\Debug\net5.0\DesafioUmbler.Shared.dll
+F:\Users\fabio\source\repos\DesafioUmbler\DesafioUmbler\Shared\obj\Debug\net5.0\ref\DesafioUmbler.Shared.dll
+F:\Users\fabio\source\repos\DesafioUmbler\DesafioUmbler\Shared\obj\Debug\net5.0\DesafioUmbler.Shared.pdb
+F:\Users\fabio\source\repos\DesafioUmbler\DesafioUmbler\Shared\obj\Debug\net5.0\DesafioUmbler.Shared.csproj.AssemblyReference.cache

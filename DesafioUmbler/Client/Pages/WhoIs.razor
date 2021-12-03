@@ -1,0 +1,67 @@
+﻿@page "/"
+@using DesafioUmbler.Shared
+@inject HttpClient Http
+
+<h3>Who Is</h3>
+
+<div id="mm-0" class="mm-page mm-slideout">
+    <section id="domain-search">
+
+        <EditForm Model="@query" OnValidSubmit="@searchData">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <div class="container py-4 pb-md-5">
+                <div id="box-result" class="row">
+                    <div class="col-lg-9 col-md-8">
+                        <label class="sr-only" for="txt-search">Domínio</label>
+                        <input class="form-control form-control-lg domain" id="txt-search" name="txt-search" @bind="query.Name" placeholder="Digite o Domínio que deseja pesquisar" type="text">
+                    </div>
+                    <div class="col-lg-3 col-md-4 text-xs-right">
+                        <button type="submit" id="btn-search" name="name" class="btn btn-success btn-block btn-lg text-xs-center" data-loading-text="Pesquisando...">
+                            <i class="icon icon-search icon-white mr-1"></i>
+                            <span>Pesquisar...</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="container w-100">
+                    <div class="row hide" id="whois-results">
+                    </div>
+                </div>
+            </div>
+        </EditForm>
+    </section>
+    @if (processando)
+    { 
+        <h2>Processando requisição, por favor aguarde...</h2>
+    }
+
+    @if (domain != null)
+    {
+        <h4>Dominio</h4>
+        <div>@string.Join(" > ", domain.Name)</div>
+        <h4>IP</h4>
+        <div> @domain.Ip</div>
+        <h4>Hospedado em</h4>
+        <div>@domain.HostedAt</div>
+        <h4>Consulta completa</h4>
+        <pre>@domain.WhoIs</pre>
+    }
+
+</div>
+
+@code {
+
+    private DomainValidation query = new DomainValidation();
+    private bool processando = false;
+    private Domain domain;
+
+    private async void searchData()
+    {
+        processando = true;
+        StateHasChanged();
+        domain = await Http.GetFromJsonAsync<Domain>(string.Format("Domain?domainName={0}",query.Name));
+        processando = false;
+        StateHasChanged();
+    }
+}
